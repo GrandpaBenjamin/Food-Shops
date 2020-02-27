@@ -1,2 +1,2 @@
 # Food-Shops
-Shops created in python - when i'm bored
+code that you can buy food in
