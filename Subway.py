@@ -36,7 +36,7 @@ def welcome():
             continue
     print('ok')
     while True:
-        salad = input('What salad would you like')
+        salad = input('What salad would you like? ')
         if in_Stock(salad,salads):
             break
         elif not(in_Stock(salad,salads)):
