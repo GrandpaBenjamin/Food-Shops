@@ -2,7 +2,7 @@
 
 from time import sleep
 from random import randint
-
+from PIL import Image
 breads = ['9-Grain Wheat','Italian','Hearty Italian','Flatbread']
 salads = ['Lettuce','Tomato','Cucumber','Olives','Pepper','Juicy']
 meats = ['Pepperoni','Salami','Ham','Roast Beef','Turkey Breast','Carved Turkey','Tuna','Teriyaki Chicken','Rotisserie Chicken','Chicken Strips','Roasted Chicken','Meatballs','Steak','Peperoni','Corned Beef']
@@ -155,12 +155,19 @@ def payment(bread,meat,salad,cookie_or_crisp,drink,size,meal, meal_price = meal_
         print('With a ',drink,'and a',cookie_or_crisp)
     print('')
     print('That will be £'+ str(cost))
+    img.close()
     quit(input())
 def payment_tendies(count):
     single_tendie = 0.50
     cost = single_tendie * count
     print('')
     print('That will be £'+ str(cost))
+    img.close()
     quit(input())
-    
+
+
+img = Image.open('Subway Menu.png')
+img.show()
 welcome()
+img.close()
+quit(input())
